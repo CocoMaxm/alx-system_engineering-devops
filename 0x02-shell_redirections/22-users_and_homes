@@ -1,0 +1,2 @@
+#!/bin/bash
+join -t ':' -o 1.1,1.6 <(cut -d ':' -f 1 /etc/passwd | sort) <(cut -d ':' -f 1,6 /etc/passwd | sort)
